@@ -31,4 +31,4 @@ then
 	fi
 fi
 
-set -o pipefail && swiftlint "$@" -- $changedFiles | stripPWD | convertToGitHubActionsLoggingCommands | tee ${WORKING_DIRECTORY}/SwiftLintResult.txt
+set -o pipefail && swiftlint "$@" -- $changedFiles | stripPWD | convertToGitHubActionsLoggingCommands | tee SwiftLintResult.txt
